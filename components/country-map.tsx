@@ -37,6 +37,9 @@ export function CountryMap({ countriesData }: CountryMapProps) {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
+      <div className="mb-4 p-2 bg-yellow-100 border border-yellow-300 rounded text-sm text-yellow-800">
+        <strong>Disclaimer:</strong> The data presented in this map has been derived from ChatGPT and has not been legally validated. Please do not use this information to make legal decisions.
+      </div>
       <Tooltip.Provider>
         <ComposableMap
           projection="geoAzimuthalEqualArea"

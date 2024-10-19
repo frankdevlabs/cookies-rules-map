@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cookie Rules Map
+
+This project is a Next.js application that visualizes the cookie regulations for analytical cookies across European Economic Area (EEA) countries.
+
+## Overview
+
+The Cookie Rules Map provides an interactive map of Europe, allowing users to quickly understand the different approaches to analytical cookie regulations in various EEA countries. It offers detailed information about each country's legislation, supervisory authority, and specific approach to analytical cookies.
+
+## Features
+
+- Interactive map of Europe with color-coded countries
+- Detailed country-specific information on cookie regulations
+- Responsive design for both desktop and mobile devices
+- Dark mode support
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/`: Contains the main application pages and layouts
+- `components/`: Reusable React components
+- `lib/`: Utility functions and data
+- `public/`: Static assets, including the Europe GeoJSON file
 
-## Learn More
+## Key Components
 
-To learn more about Next.js, take a look at the following resources:
+- `CountryMap`: The main component rendering the interactive map
+- `Legend`: Displays the color legend for the map
+- `CountryDetail`: Shows detailed information for a selected country
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Data Source
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The country data used in this project is stored in `lib/countriesData.ts`.
 
-## Deploy on Vercel
+## Styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project uses Tailwind CSS for styling, with a custom theme defined in `tailwind.config.ts`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Dependencies
+
+Key dependencies include:
+
+- Next.js
+- React
+- react-simple-maps
+- Radix UI components
+- Tailwind CSS
+
+For a full list of dependencies, refer to the `package.json` file.
+
+## Contributing
+
+Contributions to improve the project are welcome. Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+
+[Add your chosen license here]
+
+## Acknowledgments
+
+- European Data Protection Board (EDPB) guidelines
+- National data protection authorities of EEA countries
+- ChatGPT for research assistance
+
+Please note that while we've used ChatGPT to assist in our research, the information provided may not be exhaustive or up-to-date. We recommend verifying critical details with official sources or legal professionals before making any decisions based on this information.

@@ -27,7 +27,7 @@ export function NavBar() {
       <div className="container mx-auto flex h-14 items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between w-full container">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-bold">ePrivacy Directive Map</span>
+            <span className="font-bold">Art. 5.3 ePrivacy Directive GeoMap</span>
           </Link>
           <nav className="hidden md:flex md:space-x-4">
             <NavigationMenu>
