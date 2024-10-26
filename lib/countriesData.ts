@@ -2,272 +2,246 @@ export const countriesData = [
     {
       country: "Belgium",
       code: "BE", // ISO 3166-1 alpha-2 code for Belgium
-      legislation: "Law of 13 June 2005 on electronic communications",
+      legislation: "Law of 30 July 2018 on the Protection of Natural Persons with regard to the Processing of Personal Data",
       authority: "Data Protection Authority (GBA)",
       approach:
-        "Requires prior consent for non-essential cookies, including analytical cookies. No exception for low-impact analytical cookies.",
+        "Requires prior consent for non-essential cookies, including analytical cookies, with no exceptions for low-impact analytics or audience measurement cookies.",
+      color: "red", // Color for map visualization
+    },  
+    {
+      country: "Germany",
+      code: "DE", // ISO 3166-1 alpha-2 code for Germany
+      legislation: "Telecommunications Telemedia Data Protection Act (TTDSG)",
+      authority: "Federal and regional data protection authorities (Datenschutzkonferenz, DSK)",
+      approach:
+        "Requires prior consent for non-essential cookies, including analytical cookies. No exemptions for analytics or audience measurement cookies; pseudonymization is insufficient for exemption.",
       color: "red", // Color for map visualization
     },
     {
-      country: "Germany",
-      code: "DE", // ISO code for Germany
-      legislation: "Telecommunications Act (TKG) and Telemedia Act (TMG), updated by TTDSG in 2021",
-      authority: "Federal and regional data protection authorities",
-      approach:
-        "Analytical cookies require consent unless data is fully anonymized. Pseudonymization is insufficient for exemption.",
-      color: "red",
+      "country": "France",
+      "code": "FR",
+      "legislation": "Law 'Informatique et Libertés', adapted to the GDPR",
+      "authority": "Commission Nationale de l'Informatique et des Libertés (CNIL)",
+      "approach": "Prior consent is required for analytical cookies unless they are strictly for anonymous audience measurement, used solely for statistical purposes, and have no impact on user privacy. Essential cookies and certain customization cookies are exempt from consent requirements.",
+      "color": "orange"
+    },    
+    {
+      "country": "Netherlands",
+      "code": "NL",
+      "legislation": "Telecommunications Act (Telecommunicatiewet), aligned with the ePrivacy Directive",
+      "authority": "Autoriteit Persoonsgegevens (AP)",
+      "approach": "User consent is required for cookies, with exemptions for strictly necessary services. Analytical cookies with low impact on privacy can be placed without consent under specific conditions, such as data anonymization and aggregation.",
+      "color": "orange"
     },
     {
-      country: "France",
-      code: "FR", // ISO code for France
-      legislation: "Law 'Informatique et Libertés', adapted to the GDPR",
-      authority: "Commission Nationale de l'Informatique et des Libertés (CNIL)",
-      approach:
-        "Prior consent is required for analytical cookies unless they are anonymous and have no impact on user privacy.",
-      color: "red",
-    },
-    {
-      country: "Netherlands",
-      code: "NL", // ISO code for Netherlands
-      legislation: "Telecommunications Act, Article 11.7a",
-      authority: "Dutch Data Protection Authority (Autoriteit Persoonsgegevens) and Authority for Consumers & Markets (ACM)",
-      approach:
-        "Analytical cookies with low impact on privacy can be placed without consent under specific conditions.",
-      color: "orange",
-    },
-    {
-      country: "Spain",
-      code: "ES", // ISO code for Spain
-      legislation: "Law 34/2002 (LSSI) and Organic Law 3/2018 (LOPDGDD)",
-      authority: "Spanish Data Protection Agency (AEPD)",
-      approach:
-        "Requires prior informed consent for the use of analytical cookies. No exceptions for low-impact cookies.",
-      color: "red",
+      "country": "Spain",
+      "code": "ES",
+      "legislation": "Law 34/2002 (LSSI) and Organic Law 3/2018 (LOPDGDD)",
+      "authority": "Spanish Data Protection Agency (AEPD)",
+      "approach": "Requires prior informed consent for analytical cookies unless strictly for anonymous audience measurement, meeting specific limitations on data scope, purpose, retention, and cross-site tracking. Functional and essential cookies are exempt from consent requirements.",
+      "color": "orange"
     },
     {
       country: "Italy",
-      code: "IT", // ISO code for Italy
-      legislation: "Legislative Decree No. 196/2003, amended by Decree No. 101/2018",
-      authority: "Italian Data Protection Authority (Garante)",
+      code: "IT", // ISO 3166-1 alpha-2 code for Italy
+      legislation:
+        "Italian Data Protection Code (Legislative Decree No. 196/2003), amended by Legislative Decrees No. 69/2012 and No. 101/2018; Garante's Guidelines on Cookies and Other Tracking Tools (July 10, 2021)",
+      authority: "Italian Data Protection Authority (Garante per la protezione dei dati personali)",
       approach:
-        "First-party analytical cookies used for aggregate statistics can be used without consent. Third-party analytical cookies generally require consent.",
-      color: "orange",
+        "First-party and certain third-party analytics cookies used for aggregated statistics can be exempt from consent if data is anonymized and strict conditions are met. Profiling and marketing cookies always require prior consent.",
+      color: "orange", // Color for map visualization
+    },    
+    {
+      "country": "Sweden",
+      "code": "SE",
+      "legislation": "Electronic Communications Act (EkomLag, 2003:389)",
+      "authority": "Swedish Post and Telecom Authority (PTS)",
+      "approach": "Consent is generally required for analytics cookies unless they are minimal in scope, fully anonymized, and thus have negligible privacy impact. Essential cookies related to user-requested services are exempt from consent requirements.",
+      "color": "orange"
     },
     {
-      country: "Sweden",
-      code: "SE", // ISO code for Sweden
-      legislation: "Electronic Communications Act (2003:389)",
-      authority: "Swedish Post and Telecom Authority (PTS) and Swedish Authority for Privacy Protection (IMY)",
-      approach:
-        "Requires prior consent for placing analytical cookies. Implicit consent is insufficient; active user action is required.",
+      "country": "Denmark",
+      "code": "DK",
+      "legislation": "Danish Executive Order on Cookies, Danish Marketing Practices Act, Danish Data Protection Act",
+      "authority": "Danish Data Protection Authority (Datatilsynet)",
+      "approach": "Informed consent is required for non-essential cookies, with exemptions for technical necessity and user-requested service provision. Analytics can meet exemption criteria if they ensure privacy through measures like anonymization.",
+      "color": "orange"
+    },
+    {
+      "country": "Finland",
+      "code": "FI",
+      "legislation": "Information Society Code (917/2014)",
+      "authority": "Finnish Transport and Communications Agency (Traficom)",
+      "approach": "Consent is generally required for storing cookies unless they are strictly necessary for communication or providing a service requested by the user. Exemptions for analytics may be allowed if data is anonymized and used solely for operational purposes.",
+      color: "orange"
+    },
+    {
+      "country": "Norway",
+      "code": "NO",
+      "legislation": "Norwegian Electronic Communications Act (Ekomloven), Section 2-7b",
+      "authority": "Norwegian Data Protection Authority (Datatilsynet)",
+      "approach": "Strict consent requirements for cookies usage including analytics. Exemptions are narrow, usually requiring consent unless necessary for the service operation. Analytics often require consent unless anonymized and strictly necessary for service provision.",
       color: "red",
     },
     {
-      country: "Denmark",
-      code: "DK", // ISO code for Denmark
-      legislation: "Executive Order on Information and Consent Required in Case of Storing or Accessing Information in End-User Terminal Equipment",
-      authority: "Danish Data Protection Agency (Datatilsynet)",
-      approach:
-        "Strict compliance with consent requirements for all non-essential cookies, including analytical cookies.",
-      color: "red",
+      "country": "Austria",
+      "code": "AT",
+      "legislation": "Telecommunications Act 2021 (TKG 2021) and Data Protection Act (DSG)",
+      "authority": "Austrian Data Protection Authority (DSB)",
+      "approach": "Prior consent is required for non-essential cookies, including analytics, unless they are fully anonymized and aggregated. Essential cookies are exempt from consent requirements.",
+      "color": "orange"
     },
     {
-      country: "Finland",
-      code: "FI", // ISO code for Finland
-      legislation: "Information Society Code (917/2014)",
-      authority: "Finnish Transport and Communications Agency (Traficom) and Data Protection Ombudsman",
-      approach:
-        "Analytical cookies require prior consent unless they are strictly necessary for the service. Use of anonymized data may be allowed without consent under specific conditions.",
-      color: "red",
+      "country": "Poland",
+      "code": "PL",
+      "legislation": "Telecommunications Law and Act on Providing Services by Electronic Means",
+      "authority": "President of the Personal Data Protection Office (UODO)",
+      "approach": "Prior consent is required for analytical cookies, except when they are strictly necessary for the service explicitly requested by the user or are anonymized to a degree they cannot be traced back to individuals. Essential cookies are exempt from consent requirements.",
+      color: "red"
     },
     {
-      country: "Norway",
-      code: "NO", // ISO code for Norway
-      legislation: "Electronic Communications Act, Section 2-7b",
-      authority: "Norwegian Communications Authority (Nkom) and Norwegian Data Protection Authority (Datatilsynet)",
-      approach:
-        "Requires informed consent for placing analytical cookies. Emphasizes transparency and user control.",
-      color: "red",
+      "country": "Portugal",
+      "code": "PT",
+      "legislation": "Law No. 41/2004 as amended by Law No. 46/2012",
+      "authority": "Comissão Nacional de Proteção de Dados (CNPD)",
+      "approach": "Prior consent is required for all non-essential cookies, including analytical cookies, unless data is wholly anonymized or necessary for service provision. CNPD aligns with EU guidelines, requiring informed consent except for narrowly defined exemptions.",
+      "color": "orange"
     },
     {
-      country: "Austria",
-      code: "AT", // ISO code for Austria
-      legislation: "Telecommunications Act (TKG 2003), amended in 2021",
-      authority: "Austrian Data Protection Authority (DSB)",
-      approach:
-        "Analytical cookies require consent unless the data is fully anonymized. Pseudonymization is insufficient for exemption.",
-      color: "red",
+      "country": "Ireland",
+      "code": "IE",
+      "legislation": "European Communities (Electronic Communications Networks and Services) (Privacy and Electronic Communications) Regulations 2011",
+      "authority": "Data Protection Commission (DPC)",
+      "approach": "Analytical cookies require prior consent. The DPC emphasizes that implied consent is insufficient. Strictly necessary cookies and those solely for the transmission of a communication are exempt from consent requirements.",
+      "color": "red"
     },
     {
-      country: "Poland",
-      code: "PL", // ISO code for Poland
-      legislation: "Telecommunications Act of 16 July 2004",
-      authority: "Office of Electronic Communications (UKE) and Personal Data Protection Office (UODO)",
-      approach:
-        "Requires informed consent for the use of analytical cookies. Transparency and clear user information are mandatory.",
-      color: "red",
+      "country": "Greece",
+      "code": "GR",
+      "legislation": "Law 3471/2006 and Law 4624/2019",
+      "authority": "Hellenic Data Protection Authority (HDPA)",
+      "approach": "Prior consent is required for placing analytical cookies. Emphasizes transparency and clear user information. Essential cookies are exempt from consent requirements.",
+      "color": "red"
     },
     {
-      country: "Portugal",
-      code: "PT", // ISO code for Portugal
-      legislation: "Law No. 41/2004 and Law No. 46/2012",
-      authority: "Portuguese Data Protection Authority (CNPD)",
-      approach:
-        "Prior consent is required for all non-essential cookies, including analytical cookies. No specific exceptions.",
-      color: "red",
+      "country": "Czech Republic",
+      "code": "CZ",
+      "legislation": "Act No. 127/2005 Coll., on Electronic Communications",
+      "authority": "The Office for Personal Data Protection (ÚOOÚ)",
+      "approach": "Prior consent is required for storing or accessing information on user devices, with exceptions for technical necessity and transmission of communication. Analytics generally require consent unless strictly necessary for service provision.",
+      color: "red"
     },
     {
-      country: "Ireland",
-      code: "IE", // ISO code for Ireland
-      legislation: "ePrivacy Regulations 2011 (S.I. No. 336 of 2011)",
-      authority: "Data Protection Commission (DPC)",
-      approach:
-        "Analytical cookies require prior consent. The DPC emphasizes that implied consent is insufficient.",
-      color: "red",
+      "country": "Hungary",
+      "code": "HU",
+      "legislation": "Act C of 2003 on Electronic Communications",
+      "authority": "Hungarian National Authority for Data Protection and Freedom of Information (NAIH)",
+      "approach": "Consent is required for analytical cookies, as they are considered non-essential and do not fall under strictly necessary exemptions. Emphasis is placed on obtaining informed user consent through mechanisms like cookie banners, with guidance from the NAIH.",
+      color: "red"
     },
     {
-      country: "Greece",
-      code: "GR", // ISO code for Greece
-      legislation: "Law 3471/2006, adjusted for GDPR compliance",
-      authority: "Hellenic Data Protection Authority (HDPA)",
-      approach:
-        "Prior consent is required for placing analytical cookies. Emphasizes transparency and clear user information.",
-      color: "red",
+      "country": "Luxembourg",
+      "code": "LU",
+      "legislation": "Amended Law of 30 May 2005 on specific provisions regarding privacy in electronic communications",
+      "authority": "Commission Nationale pour la Protection des Données (CNPD)",
+      "approach": "Prior consent is required for analytical cookies unless they are strictly necessary for the service explicitly requested by the user. Technical cookies essential for electronic communication or service provision are exempt from consent requirements.",
+      color: "red"
     },
     {
-      country: "Czech Republic",
-      code: "CZ", // ISO code for Czech Republic
-      legislation: "Act No. 127/2005 Coll., on Electronic Communications",
-      authority: "Czech Telecommunication Office and Office for Personal Data Protection (ÚOOÚ)",
-      approach:
-        "As of January 2022, switched to opt-in; analytical cookies now require prior consent.",
-      color: "red",
+      "country": "Slovenia",
+      "code": "SI",
+      "legislation": "Zakon o elektronskih komunikacijah (ZEKom-1)",
+      "authority": "Informacijski pooblaščenec",
+      "approach": "Explicit consent is required for all cookies except those that are strictly necessary for the service functionality. Analytics cookies require consent unless they can be anonymized to qualify for an exemption.",
+      color: "red"
     },
     {
-      country: "Hungary",
-      code: "HU", // ISO code for Hungary
-      legislation: "Act C of 2003 on Electronic Communications",
-      authority: "National Authority for Data Protection and Freedom of Information (NAIH)",
-      approach:
-        "Analytical cookies require prior consent. Emphasizes transparency and active user action for consent.",
-      color: "red",
+      "country": "Estonia",
+      "code": "EE",
+      "legislation": "Electronic Communications Act",
+      "authority": "Data Protection Inspectorate (DPI)",
+      "approach": "Prior consent is required for analytics cookies as they are usually not considered strictly necessary. The exemptions apply to cookies necessary for the transmission of communications or explicitly requested services.",
+      color: "red"
     },
     {
-      country: "Luxembourg",
-      code: "LU", // ISO code for Luxembourg
-      legislation: "Law of 30 May 2005, adjusted for GDPR compliance",
-      authority: "National Commission for Data Protection (CNPD)",
-      approach:
-        "Requires informed consent for the use of analytical cookies. No specific exceptions for low-risk analytical cookies.",
-      color: "red",
+      "country": "Latvia",
+      "code": "LV",
+      "legislation": "Electronic Communications Law",
+      "authority": "Data State Inspectorate (Datu valsts inspekcija - DVI)",
+      "approach": "Prior consent is required for analytical cookies unless they are strictly necessary for providing a service requested by the user. Functional cookies may require consideration under necessity interpretation.",
+      color: "orange"
     },
     {
-      country: "Slovenia",
-      code: "SI", // ISO code for Slovenia
-      legislation: "Electronic Communications Act (ZEKom-1)",
-      authority: "Information Commissioner (IP RS)",
-      approach:
-        "One of the strictest regulations; prior active consent is required for all cookies, including analytical.",
-      color: "red",
+      "country": "Lithuania",
+      "code": "LT",
+      "legislation": "Law on Electronic Communications",
+      "authority": "State Data Protection Inspectorate (SDPI)",
+      "approach": "Prior consent is required for analytical cookies. Exceptions exist for cookies necessary for providing an information society service explicitly requested by the user. Transparency and clear information are mandatory.",
+      color: "red"
     },
     {
-      country: "Estonia",
-      code: "EE", // ISO code for Estonia
-      legislation: "Electronic Communications Act",
-      authority: "Estonian Data Protection Inspectorate",
-      approach:
-        "Analytical cookies require prior consent. Emphasizes transparency about use and purpose.",
-      color: "red",
+      "country": "Slovakia",
+      "code": "SK",
+      "legislation": "Act No. 351/2011 Coll. on Electronic Communications",
+      "authority": "Office for Personal Data Protection (Úrad na ochranu osobných údajov Slovenskej republiky)",
+      "approach": "Requires prior consent for non-essential cookies, including analytical cookies, unless implemented with measures aligning with privacy principles such as anonymization.",
+      "color": "red"
     },
     {
-      country: "Latvia",
-      code: "LV", // ISO code for Latvia
-      legislation: "Electronic Communications Law",
-      authority: "Data State Inspectorate (DVI)",
-      approach:
-        "Requires informed consent for the use of analytical cookies. Active user action is necessary.",
-      color: "red",
+      "country": "Malta",
+      "code": "MT",
+      "legislation": "Data Protection Act, incorporating the ePrivacy Directive requirements",
+      "authority": "Office of the Information and Data Protection Commissioner (IDPC)",
+      "approach": "Prior consent required for most cookies, including analytical cookies, unless they are strictly necessary for the service requested by the user. Transparency and clear user information are mandatory.",
+      "color": "red"
     },
     {
-      country: "Lithuania",
-      code: "LT", // ISO code for Lithuania
-      legislation: "Law on Electronic Communications",
-      authority: "State Data Protection Inspectorate (VDAI)",
-      approach:
-        "Analytical cookies require prior consent. Transparency and clear information are mandatory.",
-      color: "red",
+      "country": "Cyprus",
+      "code": "CY",
+      "legislation": "Law on Electronic Communications and Postal Services, aligned with ePrivacy Directive",
+      "authority": "Office of the Commissioner for Personal Data Protection",
+      "approach": "Consent is required for analytics cookies unless anonymization reduces privacy risks. Exemptions exist for cookies strictly necessary for service provision requested by the user.",
+      color: "red"
     },
     {
-      country: "Slovakia",
-      code: "SK", // ISO code for Slovakia
-      legislation: "Act No. 351/2011 Coll. on Electronic Communications",
-      authority: "Office for Personal Data Protection of the Slovak Republic",
-      approach:
-        "Requires prior consent for non-essential cookies, including analytical cookies.",
-      color: "red",
+      "country": "Iceland",
+      "code": "IS",
+      "legislation": "Implementation of the ePrivacy Directive aligned with GDPR",
+      "authority": "Icelandic Data Protection Authority (Persónuvernd)",
+      "approach": "Analytical cookies require consent. Guidelines emphasize transparency and active user consent. Strictly necessary cookies for services explicitly requested by the user are exempt from consent requirements.",
+      color: "red"
     },
     {
-      country: "Malta",
-      code: "MT", // ISO code for Malta
-      legislation: "Electronic Communications (Regulation) Act",
-      authority: "Office of the Information and Data Protection Commissioner (IDPC)",
-      approach:
-        "Analytical cookies require prior consent. Transparency and clear user information are mandatory.",
-      color: "red",
+      "country": "Liechtenstein",
+      "code": "LI",
+      "legislation": "Telecommunications Act and Data Protection Act, aligned with the ePrivacy Directive",
+      "authority": "Datenschutzstelle (DSS)",
+      "approach": "Generally requires consent for analytical cookies unless strictly necessary for the service requested by the user. Emphasizes necessity and proportionality of data collection.",
+      color: "red"
     },
     {
-      country: "Cyprus",
-      code: "CY", // ISO code for Cyprus
-      legislation: "Regulation of Electronic Communications and Postal Services Law 112(I)/2004",
-      authority: "Office of the Commissioner for Personal Data Protection",
-      approach:
-        "Requires prior consent for analytical cookies. Emphasizes transparency and user control.",
-      color: "red",
+      "country": "Croatia",
+      "code": "HR",
+      "legislation": "Electronic Communications Act, aligned with the ePrivacy Directive, and the Data Protection Act",
+      "authority": "Agencija za zaštitu osobnih podataka (AZOP)",
+      "approach": "Prior consent is required for analytical cookies. However, anonymizing IP addresses and not sharing analytical data further might help mitigate privacy concerns. Users must be provided with transparent information and the ability to opt-out.",
+      "color": "red"
     },
     {
-      country: "Iceland",
-      code: "IS", // ISO code for Iceland
-      legislation: "Electronic Communications Act No. 81/2003",
-      authority: "Icelandic Data Protection Authority (Persónuvernd)",
-      approach:
-        "Analytical cookies require consent. Guidelines emphasize transparency and active user consent.",
-      color: "red",
+      "country": "Romania",
+      "code": "RO",
+      "legislation": "Law No. 506/2004 concerning the processing of personal data and the protection of privacy in the electronic communications sector",
+      "authority": "Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)",
+      "approach": "Requires prior consent for analytical cookies. Emphasizes active user action for valid consent. No blanket exemption for analytics or audience measurement cookies, as they are not considered strictly necessary.",
+      color: "red"
     },
     {
-      country: "Liechtenstein",
-      code: "LI", // ISO code for Liechtenstein
-      legislation: "Telecommunications Act (KomG)",
-      authority: "Data Protection Authority Liechtenstein",
-      approach:
-        "Requires consent for analytical cookies. Generally follows the Swiss approach, similar to EU rules.",
-      color: "red",
-    },
-    {
-      country: "Croatia",
-      code: "HR", // ISO code for Croatia
-      legislation: "Electronic Communications Act",
-      authority: "Croatian Personal Data Protection Agency (AZOP)",
-      approach:
-        "Analytical cookies require prior consent. Transparency and clear information are mandatory.",
-      color: "red",
-    },
-    {
-      country: "Romania",
-      code: "RO", // ISO code for Romania
-      legislation: "Law No. 506/2004, amended by Law No. 235/2015",
-      authority: "National Supervisory Authority for Personal Data Processing (ANSPDCP)",
-      approach:
-        "Requires prior consent for analytical cookies. Emphasizes active user action for valid consent.",
-      color: "red",
-    },
-    {
-      country: "Bulgaria",
-      code: "BG", // ISO code for Bulgaria
-      legislation: "Electronic Communications Act",
-      authority: "Commission for Personal Data Protection (CPDP)",
-      approach:
-        "Analytical cookies require prior consent. Transparency and clear user information are essential.",
-      color: "red",
+      "country": "Bulgaria",
+      "code": "BG",
+      "legislation": "Electronic Communications Act, adapted to ePrivacy Directive",
+      "authority": "Commission for Personal Data Protection (CPDP)",
+      "approach": "Prior consent is required for analytics cookies, as they are generally not considered strictly necessary. Exemptions exist for strictly necessary cookies vital for service delivery. Transparency and clear user information are essential.",
+      color: "red"
     },
   ];
   
